@@ -1,0 +1,22 @@
+{
+  "name": "alvi",
+  "version": "1.0.0",
+  "description": "Tool to visualise various  algorithms",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/md-amir-gauhar/alvi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/md-amir-gauhar/alvi/issues"
+  },
+  "homepage": "https://github.com/md-amir-gauhar/alvi#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

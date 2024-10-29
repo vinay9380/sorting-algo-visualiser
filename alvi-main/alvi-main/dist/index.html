@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../scss/main.css" />
+    <title>Sorting Algorithm Visualiser</title>
+  </head>
+  <body>
+    <header>
+      <h4>Sorting Algorithms Visualiser</h4>
+    </header>
+    <main class="container"></main>
+    <div id = "info">
+      <h1 id="texthere"></h1>
+      <div class="manage">
+        <div id="tc">
+          <h2 id="best"></h2><br><br>
+          <h3 id="btc"></h3>
+        </div>
+        <div id="tc">
+          <h2 id="avg"></h2><br><br>
+          <h3 id="atc"></h3>
+        </div>
+        <div id="tc">
+          <h2 id="worst"></h2><br><br>
+          <h3 id="wtc"></h3>
+        </div>
+      </div>
+      <p>AlVi &copy; 2023</p>
+    </div>
+    <nav>
+      <div class="nav__top">
+        <div class="slide">
+          <label for="bars">ِBars</label> :
+          <input
+            id="bars"
+            type="range"
+            name="bars"
+            min="1"
+            max="75"
+            value="50"
+            oninput="setup()"
+            onchange="setup()"
+          />
+          <span id="b"> </span>
+        </div>
+        <div class="slide">
+          <label for="delay">Tempo</label> :
+          <input
+            id="delay"
+            type="range"
+            name="delay"
+            min="0"
+            max="1000"
+            value="40"
+            oninput="setup()"
+            onchange="setup()"
+          />
+          <span id="d"></span>
+        </div>
+      </div>
+      <div class="nav__bottom">
+        <div class="separate">
+          <label>Choose an Algorithm</label>
+          <select name="algorithms" id="select-algo">
+            <option value="Quick Sort">Quick Sort</option>
+            <option value="Bubble Sort">Bubble Sort</option>
+            <option value="Merge Sort">Merge Sort</option>
+            <option value="Insertion Sort">Insertion Sort</option>
+            <option value="Selection Sort">Selection Sort</option>
+          </select>
+        </div>
+        <button class="btn"><i class="far fa-play-circle"></i></button>
+      </div>
+    </nav>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
